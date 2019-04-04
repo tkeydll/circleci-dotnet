@@ -13,3 +13,4 @@ jobs:
       - run:
           name: Run
           command: dotnet run
+          no_output_timeout: 5m
