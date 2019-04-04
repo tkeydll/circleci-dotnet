@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: mcr.microsoft.com/dotnet/core/aspnet:2.2
+
+    steps:
+      - checkout
+      - run: echo "ASP.NET Core build sample."
+      - run:
+          name: Restore packages.
+          command: dotnet restore
+      - run:
+          name: Run
+          command: dotnet run
