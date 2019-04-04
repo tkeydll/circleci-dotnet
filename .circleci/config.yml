@@ -11,6 +11,10 @@ jobs:
           name: Restore packages.
           command: dotnet restore
       - run:
-          name: Run
-          command: dotnet run
-          no_output_timeout: 5m
+          name: Build
+          command: dotnet build
+#      - run:
+#          name: Run
+#          command: dotnet run
+#          no_output_timeout: 120m
+
